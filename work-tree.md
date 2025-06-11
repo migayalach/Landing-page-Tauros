@@ -1,14 +1,33 @@
 ```
 └── 📁tauros
+    └── 📁docs
+        └── constants.ts
+        └── order
+    └── 📁public
+        └── next.svg
+        └── vercel.svg
     └── 📁src
         └── 📁app
+            └── 📁[idProduct]
+                └── Page.tsx
+            └── favicon.ico
             └── globals.css
             └── layout.tsx
             └── page.tsx
         └── 📁components
+            └── 📁alert
+                └── 📁alertError
+                    └── AlertError.tsx
+                └── 📁alertInfo
+                    └── AlertInfo.tsx
+                └── 📁alertSuccess
+                    └── AlertSuccess.tsx
+                └── index.ts
             └── 📁button
                 └── 📁buttonContact
                     └── ButtonContact.tsx
+                └── 📁buttonOrder
+                    └── ButtonOrder.tsx
                 └── 📁buttonSend
                     └── ButtonSend.tsx
                 └── index.ts
@@ -18,7 +37,13 @@
                     └── Acard.tsx
                 └── 📁cards
                     └── Cards.tsx
+                └── 📁description
+                    └── Description.tsx
+                └── 📁feedback
+                    └── Feedback.tsx
                 └── index.ts
+                └── 📁picture
+                    └── Picture.tsx
             └── 📁carousel
                 └── Carousell.tsx
             └── 📁form
@@ -28,6 +53,18 @@
                     └── FormOrder.tsx
                 └── index.ts
             └── index.ts
+            └── 📁message
+                └── index.ts
+                └── 📁messageError
+                    └── MessageError.tsx
+                └── 📁messageInfo
+                    └── MessageInfo.tsx
+                └── 📁messageSuccess
+                    └── MessageSuccess.tsx
+            └── 📁modal
+                └── index.ts
+                └── 📁modalOrder
+                    └── ModalOrder.tsx
             └── 📁navbar
                 └── index.ts
                 └── 📁menu
@@ -35,14 +72,37 @@
                 └── NavBar.tsx
                 └── 📁order
                     └── Order.tsx
+            └── 📁results
+                └── index.ts
+                └── 📁page403
+                    └── Page403.tsx
+                └── 📁page404
+                    └── Page404.tsx
+                └── 📁page500
+                    └── Page500.tsx
+                └── 📁pageLoading
+                    └── PageLoading.tsx
+            └── 📁userInfo
+                └── 📁bibliography
+                    └── Bibliography.tsx
+                └── index.ts
+                └── 📁profilePicture
+                    └── ProfilePicture.tsx
+                └── 📁userCard
+                    └── UserCard.tsx
         └── 📁store
             └── hooks.ts
             └── index.ts
             └── Provider.tsx
             └── 📁slices
                 └── Products.ts
+    └── .env
     └── .eslintrc.json
     └── .gitignore
+    └── docker-compose.dev.yml
+    └── docker-compose.yml
+    └── DockerFile
+    └── DockerFile.dev
     └── next-env.d.ts
     └── next.config.mjs
     └── package-lock.json
@@ -51,4 +111,5 @@
     └── README.md
     └── tailwind.config.ts
     └── tsconfig.json
+    └── work-tree.md
 ```
