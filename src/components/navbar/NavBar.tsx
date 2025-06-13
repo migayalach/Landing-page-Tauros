@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Menu from "./menu/Menu";
+import Order from "./order/Order";
 
 function NavBar() {
   return (
-    <div>NavBar</div>
-  )
+    <>
+      <Order />
+      <Menu />
+    </>
+  );
 }
 
-export default NavBar
+export default NavBar;
