@@ -1,10 +1,17 @@
 // COMPONENTS
-import { Calls, Card, CarouselInfo, UserInfo } from "@/components";
+import {
+  ButtonOrder,
+  CarouselInfo,
+  Footer,
+  Products,
+  Owners,
+} from "@/components";
 // HOOKS
 // REDUX
 // INTERFACE
 // LIBRARY
 // CSS
+import "@/styles/background.styles.css";
 // JAVASCRIP
 
 export const metadata = {
@@ -15,19 +22,20 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main>
-      <section>
+    <main className="overflow-x-hidden">
+      <section className="backgroun1">
         <CarouselInfo />
       </section>
-      <section>
-        <Card />
+      <section className="backgroun2">
+        <Products />
       </section>
-      <section>
-        <UserInfo />
+      <section className="backgroun1">
+        <Owners />
       </section>
-      <section>
-        <Calls />
+      <section className="backgroun2">
+        <Footer />
       </section>
+      <ButtonOrder />
     </main>
   );
 }
