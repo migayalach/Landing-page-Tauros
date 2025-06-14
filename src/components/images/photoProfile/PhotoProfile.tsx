@@ -9,7 +9,15 @@ import { Image } from "antd";
 // JAVASCRIP
 
 function PhotoProfile({ srcImage }: { srcImage: string }) {
-  return <Image width={200} src={srcImage} preview={false} />;
+  return (
+    <Image
+      style={{ borderRadius: "25px", position: "absolute" }}
+      width={380}
+      height={500}
+      src={srcImage}
+      preview={false}
+    />
+  );
 }
 
 export default PhotoProfile;
