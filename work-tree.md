@@ -9,9 +9,9 @@
     └── 📁src
         └── 📁app
             └── 📁[idProduct]
-                └── Page.tsx
+                └── page.tsx
             └── favicon.ico
-            └── globals.css
+            └── head.tsx
             └── layout.tsx
             └── page.tsx
         └── 📁components
@@ -24,34 +24,42 @@
                     └── AlertSuccess.tsx
                 └── index.ts
             └── 📁button
-                └── 📁buttonContact
-                    └── ButtonContact.tsx
+                └── 📁buttonMoreAbout
+                    └── button-more-about.css
+                    └── ButtonMoreAbout.tsx
                 └── 📁buttonOrder
                     └── ButtonOrder.tsx
-                └── 📁buttonSend
-                    └── ButtonSend.tsx
                 └── index.ts
-                └── 📁sign
             └── 📁card
                 └── 📁aCard
+                    └── a-card.css
                     └── Acard.tsx
                 └── 📁cards
                     └── Cards.tsx
                 └── 📁description
                     └── Description.tsx
                 └── 📁feedback
+                    └── FeedBack.interface.ts
                     └── Feedback.tsx
                 └── index.ts
-                └── 📁picture
-                    └── Picture.tsx
             └── 📁carousel
-                └── Carousell.tsx
+                └── 📁carouselInfo
+                    └── CarouselInfo.tsx
+                └── index.ts
             └── 📁form
                 └── 📁formContacts
                     └── FormContacts.tsx
                 └── 📁formOrder
                     └── FormOrder.tsx
                 └── index.ts
+            └── 📁images
+                └── 📁imageModal
+                    └── ImageModal.tsx
+                └── 📁imageProduct
+                    └── ImageProduct.tsx
+                └── index.ts
+                └── 📁photoProfile
+                    └── PhotoProfile.tsx
             └── index.ts
             └── 📁message
                 └── index.ts
@@ -70,8 +78,6 @@
                 └── 📁menu
                     └── Menu.tsx
                 └── NavBar.tsx
-                └── 📁order
-                    └── Order.tsx
             └── 📁results
                 └── index.ts
                 └── 📁page403
@@ -84,18 +90,42 @@
                     └── PageLoading.tsx
             └── 📁userInfo
                 └── 📁bibliography
+                    └── bibliography.css
                     └── Bibliography.tsx
                 └── index.ts
-                └── 📁profilePicture
-                    └── ProfilePicture.tsx
                 └── 📁userCard
                     └── UserCard.tsx
+            └── 📁views
+                └── 📁calls
+                    └── Calls.tsx
+                └── 📁footer
+                    └── Footer.tsx
+                └── index.ts
+                └── 📁owners
+                    └── owners.css
+                    └── Owners.tsx
+                └── 📁products
+                    └── Products.tsx
+        └── 📁interface
+            └── index.ts
+            └── InputAcard.interface.ts
+            └── inputProduct.interface.ts
         └── 📁store
             └── hooks.ts
             └── index.ts
             └── Provider.tsx
             └── 📁slices
                 └── Products.ts
+        └── 📁styles
+            └── background.styles.css
+            └── globals.css
+            └── text.styles.css
+        └── 📁test
+            └── App.test.ts
+        └── 📁tools
+            └── listImages.tools.ts
+            └── product.tools.ts
+            └── user.tools.ts
     └── .env
     └── .eslintrc.json
     └── .gitignore
