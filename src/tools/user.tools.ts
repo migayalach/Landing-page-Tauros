@@ -3,18 +3,18 @@ export const listUsers = [
     name: "Diego Eduardo",
     lastName: "Soliz Taurus",
     photo:
-      "https://res.cloudinary.com/dqgcyonb9/image/upload/v1702008744/143_ue9gzk.gif",
+      "https://www.soyhenry.com/_next/image?url=%2Ftestimonials%2FAR%2Fdiegobarrios.webp&w=384&q=75",
     aboutMe:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit eros himenaeos inceptos sollicitudin magnis, nec nisi ad eget sociosqu tincidunt quam interdum massa vitae odio, torquent et phasellus netus velit dictum elementum libero pellentesque sagittis hac. Malesuada dignissim torquent gravida bibendum ad sem vulputate scelerisque vestibulum eleifend morbi primis urna, porttitor praesent parturient tortor nascetur laoreet felis aenean feugiat himenaeos rhoncus.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit eros himenaeos inceptos sollicitudin magnis, nec nisi ad eget sociosqu tincidunt quam interdum massa vitae odio, torquent et phasellus netus velit dictum elementum libero pellentesque sagittis hac.",
     phone: "71650223",
   },
   {
     name: "Tatiana",
     lastName: "Flores Lopez",
     photo:
-      "https://res.cloudinary.com/dqgcyonb9/image/upload/v1702008637/92_i4rzke.gif",
+      "https://www.soyhenry.com/_next/image?url=%2Ftestimonials%2FMX%2Fabigailcortes.webp&w=384&q=75",
     aboutMe:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit eros himenaeos inceptos sollicitudin magnis, nec nisi ad eget sociosqu tincidunt quam interdum massa vitae odio, torquent et phasellus netus velit dictum elementum libero pellentesque sagittis hac. Malesuada dignissim torquent gravida bibendum ad sem vulputate scelerisque vestibulum eleifend morbi primis urna, porttitor praesent parturient tortor nascetur laoreet felis aenean feugiat himenaeos rhoncus.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit eros himenaeos inceptos sollicitudin magnis, nec nisi ad eget sociosqu tincidunt quam interdum massa vitae odio, torquent et phasellus netus velit dictum elementum libero pellentesque sagittis hac.",
     phone: "68550504",
   },
 ];

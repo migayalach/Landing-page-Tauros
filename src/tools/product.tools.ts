@@ -15,8 +15,8 @@ export const listProducts = [
     productName: "Búlgaros / Kéfir",
     price: "5",
     images: [
-      "https://alimentoyconciencia.com/wp-content/uploads/5645904343_c784f1d560_z.jpg",
       "https://imag.bonviveur.com/fermentacion-para-activar-los-bulgaros.jpg",
+      "https://alimentoyconciencia.com/wp-content/uploads/5645904343_c784f1d560_z.jpg",
     ],
     description:
       "El kéfir (también, kefir, búlgaros, yogur búlgaro, leche kefirada, yogurt de pajaritos); es un producto lácteo parecido al yogur líquido, fermentado a través de la acción de un conjunto de levaduras (hongos) y lactobacilos (bacterias). También reciben este nombre los gránulos o nódulos utilizados para su producción.",

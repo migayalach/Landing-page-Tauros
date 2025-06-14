@@ -1,6 +1,4 @@
 export const listImages = [
-  "https://res.cloudinary.com/dqgcyonb9/image/upload/v1727455020/cld-sample.jpg",
-  "https://res.cloudinary.com/dqgcyonb9/image/upload/v1727455020/cld-sample-2.jpg",
-  "https://res.cloudinary.com/dqgcyonb9/image/upload/v1727455020/cld-sample-3.jpg",
-  "https://res.cloudinary.com/dqgcyonb9/image/upload/v1727455020/cld-sample-4.jpg",
+  "https://www.suzuki.com.bo/media/j0fnbkow/01_suzuki_landing_1927x650.png",
+  "https://www.suzuki.com.bo/media/2izbhox3/portadas-homebanner-all-new-scross-1927x650.png",
 ];
