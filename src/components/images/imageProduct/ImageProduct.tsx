@@ -20,7 +20,16 @@ function ImageProduct({ listImages }: { listImages: string[] }) {
 
   return (
     <Image.PreviewGroup items={itemsList}>
-      <Image width={200} src={itemsList[0]} />
+      <Image
+        width={369}
+        height={250}
+        style={{
+          objectFit: "cover",
+          objectPosition: "center",
+          borderRadius: "25px",
+        }}
+        src={itemsList[0]}
+      />
     </Image.PreviewGroup>
   );
 }
