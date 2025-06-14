@@ -1,5 +1,4 @@
 // COMPONENTS
-import Footer from "@/components/footer/Footer";
 import { FormContacts } from "@/components/form";
 // HOOKS
 import React from "react";
@@ -15,9 +14,6 @@ function Calls() {
       <div>
         <h1>¿Te gustaria trabajar con nosotros?</h1>
         <FormContacts />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );
