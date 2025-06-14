@@ -1,0 +1,15 @@
+.title {
+  font-family: "Paytone One", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fca311;
+  margin-left: 10px;
+}
+
+.title-product {
+  font-family: "Paytone One", sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  font-style: normal;
+  color: #293241;
+}
