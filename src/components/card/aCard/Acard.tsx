@@ -1,8 +1,8 @@
 // COMPONENTS
 import { ImageProduct } from "@/components/images";
+import { ButtonMoreAbout } from "@/components/button";
 // HOOKS
 import React from "react";
-import Link from "next/link";
 // REDUX
 // INTERFACE
 import { InputProduct } from "@/interface/InputAcard.interface";
@@ -10,7 +10,6 @@ import { InputProduct } from "@/interface/InputAcard.interface";
 // CSS
 import "./a-card.css";
 import "@/styles/text.styles.css";
-import { ButtonMoreAbout } from "@/components/button";
 // JAVASCRIP
 
 function Acard({ infoProduct }: { infoProduct: InputProduct }) {

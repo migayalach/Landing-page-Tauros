@@ -7,7 +7,6 @@ import React from "react";
 // LIBRARY
 // CSS
 import "@/styles/text.styles.css";
-
 // JAVASCRIP
 import { listProducts } from "@/tools/product.tools";
 

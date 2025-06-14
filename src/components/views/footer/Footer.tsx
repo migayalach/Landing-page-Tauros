@@ -1,5 +1,12 @@
-import React from "react";
+// COMPONENTS
 import Calls from "../calls/Calls";
+// HOOKS
+import React from "react";
+// REDUX
+// INTERFACE
+// LIBRARY
+// CSS
+// JAVASCRIP
 
 function Footer() {
   return (
