@@ -9,7 +9,7 @@ import { Image } from "antd";
 // JAVASCRIP
 
 function ImageModal({ src }: { src: string }) {
-  return <Image src={src} />;
+  return <Image src={src} style={{ marginBottom: "-8px" }} preview={false} />;
 }
 
 export default ImageModal;
