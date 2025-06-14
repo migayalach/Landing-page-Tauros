@@ -10,5 +10,3 @@ export * from "./results";
 export * from "./images";
 export * from "./carousel";
 export * from "./views";
-
-export { default as Footer } from "./footer/Footer";
