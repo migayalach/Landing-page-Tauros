@@ -1,9 +1,15 @@
-import React from 'react'
+// COMPONENTS
+// HOOKS
+import React from "react";
+// REDUX
+// INTERFACE
+// LIBRARY
+// CSS
+import "./bibliography.css";
+// JAVASCRIP
 
-function Bibliography() {
-  return (
-    <div>Bibliography</div>
-  )
+function Bibliography({ about }: { about: string }) {
+  return <p className="text-about">&quot;{about}&quot;</p>;
 }
 
-export default Bibliography
+export default Bibliography;
