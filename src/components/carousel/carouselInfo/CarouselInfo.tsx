@@ -14,17 +14,14 @@ const contentStyle: React.CSSProperties = {
   color: "#fff",
   lineHeight: "500px",
   textAlign: "center",
-  background: "#fcca46",
 };
 
 function CarouselInfo() {
   return (
-    <Carousel autoplay autoplaySpeed={5000}>
+    <Carousel autoplay autoplaySpeed={5000} >
       {listImages?.map((item, index) => (
-        <div key={index}>
-          <h3 style={contentStyle}>
-            <ImageModal src={item} />
-          </h3>
+        <div key={index} style={contentStyle}>
+          <ImageModal src={item} />
         </div>
       ))}
     </Carousel>
