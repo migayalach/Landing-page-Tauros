@@ -1,23 +1,23 @@
-"use client";
-import { Button } from "antd";
+// COMPONENTS
+// HOOKS
 import React from "react";
-import { DownloadOutlined } from "@ant-design/icons";
+// REDUX
+// INTERFACE
+// LIBRARY
+import { FloatButton } from "antd";
+// CSS
+// JAVASCRIP
 
 function ButtonOrder() {
-
-  const handleAction = () => {
-    alert("order");
-  };
-
   return (
-    <>
-      <Button
-        type="primary"
-        shape="circle"
-        icon={<DownloadOutlined />}
-        onClick={handleAction}
-      />
-    </>
+    <FloatButton
+      style={{ marginRight: "15px" }}
+      tooltip={{
+        title: "¡Contactanos!",
+        color: "#8ac926",
+        placement: "top",
+      }}
+    />
   );
 }
 
