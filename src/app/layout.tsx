@@ -7,11 +7,11 @@ const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Tauros",
-    template: "%s | Tauros",
+    default: "Taurus",
+    template: "%s | Taurus",
   },
   description:
-    "Gelatinas de pata Tauros para articulaciones fuertes y salud natural.",
+    "Gelatinas de pata Taurus para articulaciones fuertes y salud natural.",
 };
 
 export default function RootLayout({
