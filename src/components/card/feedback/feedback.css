@@ -1,0 +1,21 @@
+.container-block {
+  border: 0.2px solid #e5e5e5;
+  padding: 10px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 0 4px 8px #000;
+  transition: box-shadow 0.1s ease, background-color 0.3s ease;
+}
+
+.container-personal-data span {
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-left: 5px;
+}
+
+.container-block:hover {
+  box-shadow: 0 5px 10px #34403a;
+  background-color: #dfdfdf;
+}
