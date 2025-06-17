@@ -3,30 +3,16 @@
 // HOOKS
 // REDUX
 import React, { useState } from "react";
-// INTERFACE
 // LIBRARY
 import { Button, Form, Input } from "antd";
 // CSS
 // JAVASCRIP
-
-const layout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 },
-};
-
-const validateMessages = {
-  required: "${label} is required!",
-  types: {
-    email: "${label} is not a valid email!",
-    number: "${label} is not a valid number!",
-  },
-  number: {
-    range: "${label} must be between ${min} and ${max}",
-  },
-};
-
-const onFinish = (values: any) => {
-  console.log(values);
+// INTERFACE
+type FieldType = {
+  name: string;
+  lastName: string;
+  email: string;
+  phone: string;
 };
 
 function FormContacts() {
@@ -37,28 +23,99 @@ function FormContacts() {
     phone: "",
   });
 
+  const handleStateData = (event: {
+    target: { name: string; value: string };
+  }) => {
+    setInfoUser({
+      ...infoUser,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const onFinish = (values: any) => {
+    console.log(values);
+  };
+
   return (
     <Form
-      {...layout}
-      name="nest-messages"
-      onFinish={onFinish}
+      name="basic"
+      labelCol={{ span: 8 }}
+      wrapperCol={{ span: 16 }}
       style={{ maxWidth: 600 }}
-      validateMessages={validateMessages}
+      initialValues={{ remember: true }}
+      onFinish={onFinish}
+      autoComplete="off"
     >
-      <Form.Item
-        name={["user", "email"]}
-        label="Email"
-        rules={[{ type: "email" }]}
+      <Form.Item<FieldType>
+        label="Nombre"
+        name="name"
+        rules={[
+          {
+            required: true,
+            message: "El apellido es obligatorio",
+          },
+          {
+            pattern: /^[a-zA-ZÀ-ÿ\s]+$/,
+            message: "Solo se permiten letras",
+          },
+        ]}
       >
-        <Input />
+        <Input name="name" onChange={handleStateData} value={infoUser.name} />
       </Form.Item>
 
-      <Form.Item
-        name={["user", "email"]}
-        label="Email"
-        rules={[{ type: "email" }]}
+      <Form.Item<FieldType>
+        label="Apellidos"
+        name="lastName"
+        rules={[
+          {
+            required: true,
+            message: "El apellido es obligatorio",
+          },
+          {
+            pattern: /^[a-zA-ZÀ-ÿ\s]+$/,
+            message: "Solo se permiten letras",
+          },
+        ]}
       >
-        <Input />
+        <Input
+          name="lastName"
+          onChange={handleStateData}
+          value={infoUser.lastName}
+        />
+      </Form.Item>
+
+      <Form.Item<FieldType>
+        label="Email"
+        name="email"
+        rules={[
+          {
+            required: true,
+            message: "El email es obligatorio",
+          },
+          {
+            type: "email",
+            message: "El email no es válido",
+          },
+        ]}
+      >
+        <Input name="email" onChange={handleStateData} value={infoUser.email} />
+      </Form.Item>
+
+      <Form.Item<FieldType>
+        label="Celular"
+        name="phone"
+        rules={[
+          {
+            required: true,
+            message: "El celular es obligatorio",
+          },
+          {
+            pattern: /^[0-9]{8}$/,
+            message: "Ingrese un numero de celular para poder contactarlo",
+          },
+        ]}
+      >
+        <Input name="phone" onChange={handleStateData} value={infoUser.phone} />
       </Form.Item>
 
       <Form.Item label={null}>
