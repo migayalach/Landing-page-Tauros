@@ -1,6 +1,7 @@
 "use client";
 // COMPONENTS
 import Feedback from "@/components/card/feedback/Feedback";
+import { ImageProduct } from "@/components";
 // HOOKS
 import React, { useEffect, useState } from "react";
 // REDUX
@@ -12,9 +13,9 @@ import {
 } from "@/interface/index";
 // LIBRARY
 // CSS
+import "./product-item.css";
 // JAVASCRIP
 import { listProducts, listFeedback } from "@/tools/product.tools";
-import { ImageProduct } from "@/components";
 
 type PageProps = {
   params: {
@@ -73,15 +74,20 @@ function Page({ params }: PageProps) {
   }, []);
 
   return (
-    <div>
-      <div>
-        <h1>{product.productName}</h1>
-        <ImageProduct listImages={product.images} />
-        <h2>{product.description}</h2>
-        <span>Bs.- {product.price}</span>
+    <div className="container-product-item">
+      <div className="container-info-product flex flex-col lg:flex-row justify-center items-center">
+        <div className="column-1">
+          <h1 className="name-product">{product.productName}</h1>
+          <div className="container-images">
+            <ImageProduct listImages={product.images} />
+          </div>
+        </div>
+        <div className="container-description">
+          <p className="description-product">{product.description}</p>
+        </div>
       </div>
-      <div>
-        <Feedback />
+      <div className="flex flex-row justify-center items-center container-feedback">
+        <Feedback listFeedback={feedbackList} />
       </div>
     </div>
   );
