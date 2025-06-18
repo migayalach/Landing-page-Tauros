@@ -22,7 +22,7 @@ function Owners() {
             <div
               key={index}
               className="conteiner-data mt-2 mb-2 ml-0 md:ml-40 md:first:ml-0"
-              >
+            >
               <PhotoProfile srcImage={info.photo} />
               <div className="container-personal-info">
                 <Bibliography about={info.aboutMe} />
