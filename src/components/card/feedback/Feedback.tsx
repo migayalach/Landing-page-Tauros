@@ -43,7 +43,7 @@ function Feedback({ listFeedback }: { listFeedback: FeedbackInterface[] }) {
           lineHeight: "32px",
         }}
       >
-        <Button onClick={onLoadMore}>Ver mas opiniones</Button>
+        <Button onClick={onLoadMore}>Ver mas</Button>
       </div>
     ) : null;
 
