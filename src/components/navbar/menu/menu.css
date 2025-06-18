@@ -1,9 +1,29 @@
-.container-menu {
-  background-color: #264653;
-  height: 40px;
+.fixed-header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
+}
+
+.logo img {
+  width: 65px;
+  margin-left: -15px;
+}
+
+.menu-info {
+  margin-left: auto;
+  min-width: 0;
+}
+
+.name-company {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+@media (max-width: 749px) {
+  .name-company {
+    font-size: 25px;
+    margin-left: 70px;
+  }
 }
