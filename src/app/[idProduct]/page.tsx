@@ -1,7 +1,7 @@
 "use client";
 // COMPONENTS
 import Feedback from "@/components/card/feedback/Feedback";
-import { ImageProduct } from "@/components";
+import { ButtonOrder, ImageProduct } from "@/components";
 // HOOKS
 import React, { useEffect, useState } from "react";
 // REDUX
@@ -89,6 +89,7 @@ function Page({ params }: PageProps) {
       <div className="flex flex-row justify-center items-center container-feedback">
         <Feedback listFeedback={feedbackList} />
       </div>
+      <ButtonOrder />
     </div>
   );
 }
