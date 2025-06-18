@@ -11,13 +11,20 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="flex flex-col ">
-      <Calls />
+    <div className="flex flex-col md:flex-col content-center">
       <div>
-        <h1>Nuestras redes</h1>
-        <ButtonOurNetworks title="facebook" icon="facebookIcon" />
-        <ButtonOurNetworks title="instagram" icon="instagramIcon" />
-        <ButtonOurNetworks title="tiktok" icon="tiktokIcon" />
+        <Calls />
+      </div>
+      <div>
+        <hr className="bg-black h-[1px] w-full" />
+        <div className="flex flex-row justify-center items-center pt-3 ">
+          <h1>¡Síguenos en las redes sociales!</h1>
+          <div className="pl-12">
+            <ButtonOurNetworks title="facebook" icon="facebookIcon" />
+            <ButtonOurNetworks title="instagram" icon="instagramIcon" />
+            <ButtonOurNetworks title="tiktok" icon="tiktokIcon" />
+          </div>
+        </div>
       </div>
     </div>
   );
