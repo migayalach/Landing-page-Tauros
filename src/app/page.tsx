@@ -15,24 +15,24 @@ import "@/styles/background.styles.css";
 // JAVASCRIP
 
 export const metadata = {
-  title: "Tauros Home",
+  title: "Taurus Home",
   description:
     "Compra gelatinas de pata naturales en Tauros. Fortalece tus articulaciones con productos saludables y de calidad. Envíos rápidos y atención personalizada.",
 };
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden" style={{paddingTop: "64px"}}>
       <section className="backgroun1">
         <CarouselInfo />
       </section>
-      <section className="backgroun2">
+      <section id="products" className="backgroun2">
         <Products />
       </section>
-      <section className="backgroun1">
+      <section id="us" className="backgroun1">
         <Owners />
       </section>
-      <section className="backgroun2">
+      <section id="foorter" className="backgroun2">
         <Footer />
       </section>
       <ButtonOrder />
