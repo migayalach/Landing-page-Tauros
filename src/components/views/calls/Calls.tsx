@@ -10,11 +10,9 @@ import React from "react";
 
 function Calls() {
   return (
-    <div>
-      <div>
-        <h1>¿Te gustaria trabajar con nosotros?</h1>
-        <FormContacts />
-      </div>
+    <div className="pl-4 pr-4 sm:pl-16 md:pl-12">
+      <h1>¿Te gustaria trabajar con nosotros?</h1>
+      <FormContacts />
     </div>
   );
 }
