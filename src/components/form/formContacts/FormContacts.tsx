@@ -41,7 +41,7 @@ function FormContacts() {
       name="basic"
       labelCol={{ span: 8 }}
       wrapperCol={{ span: 16 }}
-      style={{ maxWidth: 600 }}
+      style={{ maxWidth: 600, marginTop: "20px" }}
       initialValues={{ remember: true }}
       onFinish={onFinish}
       autoComplete="off"
