@@ -120,7 +120,11 @@ function FormContacts() {
       </Form.Item>
 
       <Form.Item label={null}>
-        <Button type="primary" htmlType="submit">
+        <Button
+          type="primary"
+          htmlType="submit"
+          className="flex justify-center text-center w-52 mt-5 md:ml-20 lg:ml-10"
+        >
           Enviar
         </Button>
       </Form.Item>
