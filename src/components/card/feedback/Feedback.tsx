@@ -48,35 +48,37 @@ function Feedback({ listFeedback }: { listFeedback: FeedbackInterface[] }) {
     ) : null;
 
   return (
-    <div>
-      <h1 style={{ marginBottom: "15px" }}>
+    <>
+      <h1 className="mb-4 text-[#fca311] font-bold text-[18px] md:text-[20px]">
         ¿Que opina la gente de nuestro producto?
       </h1>
-      <List
-        className="demo-loadmore-list"
-        loading={initLoading}
-        itemLayout="horizontal"
-        loadMore={loadMore}
-        dataSource={list}
-        renderItem={(item) => (
-          <Skeleton avatar title={false} loading={false} active>
-            <List.Item>
-              <Skeleton avatar title={false} loading={false} active>
-                <div className="container-block">
-                  <div className="head">
-                    <div className="container-personal-data">
-                      <Avatar src={item.image} />
-                      <span>{item.fullName}</span>
+      <div className="w-full flex md:flex-row md:justify-center">
+        <List
+          className="demo-loadmore-list"
+          loading={initLoading}
+          itemLayout="horizontal"
+          loadMore={loadMore}
+          dataSource={list}
+          renderItem={(item) => (
+            <Skeleton avatar title={false} loading={false} active>
+              <List.Item>
+                <Skeleton avatar title={false} loading={false} active>
+                  <div className="container-block">
+                    <div className="head">
+                      <div className="container-personal-data text-[#240046]">
+                        <Avatar src={item.image} />
+                        <span>{item.fullName}</span>
+                      </div>
                     </div>
+                    <div className="container-comment">{item.comment}</div>
                   </div>
-                  <div className="container-comment">{item.comment}</div>
-                </div>
-              </Skeleton>
-            </List.Item>
-          </Skeleton>
-        )}
-      />
-    </div>
+                </Skeleton>
+              </List.Item>
+            </Skeleton>
+          )}
+        />
+      </div>
+    </>
   );
 }
 
