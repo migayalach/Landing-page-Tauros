@@ -39,12 +39,13 @@ function FormContacts() {
   return (
     <Form
       name="basic"
-      labelCol={{ span: 8 }}
+      labelCol={{ span: 4 }}
       wrapperCol={{ span: 16 }}
       style={{ maxWidth: 600, marginTop: "20px" }}
       initialValues={{ remember: true }}
       onFinish={onFinish}
       autoComplete="off"
+      className="pl-4 pr-4 sm:pl-16 md:pl-12"
     >
       <Form.Item<FieldType>
         label="Nombre"
