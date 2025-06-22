@@ -74,23 +74,25 @@ function Page({ params }: PageProps) {
   }, []);
 
   return (
-    <div className="container-product-item">
-      <div className="container-info-product flex flex-col lg:flex-row justify-center items-center">
-        <div className="column-1">
-          <h1 className="name-product">{product.productName}</h1>
-          <div className="container-images">
-            <ImageProduct listImages={product.images} />
+    <>
+      <div className="pt-20 pb-5">
+        <div className="flex flex-col lg:flex-row justify-center items-center">
+          <div className="column-1">
+            <h1 className="name-product">{product.productName}</h1>
+            <div className="md:ml-10">
+              <ImageProduct listImages={product.images} />
+            </div>
+          </div>
+          <div className="mb-6 mr-3 ml-3 text-[19px] md:text-[22px] md:p-12 md:leading-loose">
+            <p>{product.description}</p>
           </div>
         </div>
-        <div className="container-description">
-          <p className="description-product">{product.description}</p>
+        <div className="pr-3 pl-3">
+          <Feedback listFeedback={feedbackList} />
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center container-feedback">
-        <Feedback listFeedback={feedbackList} />
-      </div>
       <ButtonOrder />
-    </div>
+    </>
   );
 }
 
