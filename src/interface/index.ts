@@ -1,4 +1,13 @@
 import { InputProduct } from "./InputAcard.interface";
-import { FeedbackInterface, FeedbackListInterface } from "./inputProduct.interface";
+import {
+  FeedbackInterface,
+  FeedbackListInterface,
+} from "./inputProduct.interface";
+import { DataContact } from "./dataContact.interface";
 
-export type { InputProduct, FeedbackInterface, FeedbackListInterface };
+export type {
+  InputProduct,
+  FeedbackInterface,
+  FeedbackListInterface,
+  DataContact,
+};
