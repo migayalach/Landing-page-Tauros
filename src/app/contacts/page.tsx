@@ -11,10 +11,7 @@ import "@/styles/text.styles.css";
 
 function page() {
   return (
-    <div
-      className="pt-20"
-      style={{ paddingLeft: "10px", paddingRight: "10px" }}
-    >
+    <div className="md:pt-20 md:pl-20 md:pr-20 mt-20 flex flex-col w-full justify-center">
       <h1 className="title mb-3">Lista de personas:</h1>
       <FilterContact />
       <Table />
