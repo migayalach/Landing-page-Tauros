@@ -36,18 +36,16 @@ function TableInfo() {
   };
 
   return (
-    <>
-      <div style={{ maxWidth: 800, margin: "0 auto" }}>
-        <Table
-          columns={columns}
-          dataSource={renderList(listContacts)}
-          pagination={{
-            pageSize: 15,
-            position: ["bottomCenter"],
-          }}
-        />
-      </div>
-    </>
+    <div className="w-full overflow-x-auto">
+      <Table
+        columns={columns}
+        dataSource={renderList(listContacts)}
+        pagination={{
+          pageSize: 15,
+          position: ["bottomCenter"],
+        }}
+      />
+    </div>
   );
 }
 
