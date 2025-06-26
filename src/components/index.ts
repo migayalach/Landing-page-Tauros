@@ -8,4 +8,5 @@ export * from "./images";
 export * from "./carousel";
 export * from "./views";
 export * from "./filter";
+export * from "./modal";
 export { default as Table } from "./table/TableInfo";
