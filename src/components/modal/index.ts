@@ -1,1 +1,1 @@
-export { default as ModalOrder } from "./modalOrder/ModalOrder";
+export { default as ModalLogin } from "./modalLogin/ModalLogin";
