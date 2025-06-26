@@ -1,25 +1,40 @@
 "use client";
 // COMPONENTS
+import { ModalLogin } from "@/components/modal";
+import { ButtonSignOut } from "@/components/button";
 // HOOKS
 import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 // REDUX
 // INTERFACE
 // LIBRARY
 import { Layout, Menu } from "antd";
 // CSS
 import "./menu.css";
-import Link from "next/link";
 // JAVASCRIP
 
 const { Header } = Layout;
 
-const items = [
-  { key: "1", label: <a href="#products">Productos</a> },
-  { key: "2", label: <a href="#us">Quienes somos</a> },
-  { key: "3", label: <a href="#foorter">Contactanos</a> },
-];
-
 function NavBar() {
+  const path = usePathname();
+  let items =
+    path === "/contacts"
+      ? [
+          { key: "1", label: <Link href="/">Home</Link> },
+          {
+            key: "2",
+            label: <Link href="/contacts">Mis contactos</Link>,
+          },
+          { key: "3", label: <ButtonSignOut /> },
+        ]
+      : [
+          { key: "1", label: <a href="#products">Productos</a> },
+          { key: "2", label: <a href="#us">Quienes somos</a> },
+          { key: "3", label: <a href="#foorter">Contactanos</a> },
+          { key: "5", label: <ModalLogin /> },
+        ];
+
   return (
     <Layout>
       <Header
@@ -42,7 +57,7 @@ function NavBar() {
         <Menu
           theme="dark"
           mode="horizontal"
-          // defaultSelectedKeys={["1"]}
+          defaultSelectedKeys={[path === "/contacts" ? "2" : ""]}
           items={items}
           className="menu-info"
         />
