@@ -1,16 +1,10 @@
-interface Order {
-  asc: "asc";
-  desc: "desc";
-}
+type Order = "asc" | "desc" | "";
 
-interface SearchData {
-  name: "name";
-  date: "date";
-}
+type SearchData = "name" | "date" | "";
 
 interface FilterData {
-  value: SearchData | "";
-  order: Order | "";
+  data: SearchData;
+  order: Order;
 }
 
 export type { Order, SearchData, FilterData };
